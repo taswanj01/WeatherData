@@ -1,0 +1,33 @@
+.box {
+    min-height: 50px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .skyblue {
+    background: deepskyblue;
+  }
+  
+  .purple {
+    background: rebeccapurple;
+  }
+  
+  .red {
+    background: indianred;
+  }
+
+body {
+  background-color: rgb(233, 227, 227);
+}
+
+#main_lat {
+   /* margin: 1em; */
+   padding: 1em 
+
+}
+#main_viz {
+  /* margin: 1em;  */
+  padding: 1em
+}
