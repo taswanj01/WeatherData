@@ -23,11 +23,44 @@ body {
 }
 
 #main_lat {
-   /* margin: 1em; */
-   padding: 1em 
+   padding: 4vw;
+   margin-top: 2vw;
+   margin-bottom: 3vw;
+   margin-right: 3vw; 
+   
 
 }
 #main_viz {
-  /* margin: 1em;  */
-  padding: 1em
+  padding: 4vw;
+  padding-bottom: 5vw;
+  margin-top: 2vw;
+  margin-bottom: 10vw; 
+  margin-left: 3vw;
+}
+
+footer p {
+  line-height: 200%;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  border-top-style: solid;
+  border-top: 2vw color rgb(0, 107, 126);
+  background-color: rgb(94, 94, 94);
+  padding-top: .5vw;
+  padding-bottom: .5vw;
+  
+}
+
+img {
+  padding: 1vw;
+}
+
+h2 {
+  font: sans-serif;
+}
+
+#main_lat img {
+  float: left;
 }
