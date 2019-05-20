@@ -90,3 +90,20 @@ p {
 #data_header {
   padding: 4vw;
 }
+
+
+@media (max-width: 576px) {
+  #home_page_icon {
+    font-size: 20pt;
+    background-color: #17a5bb;
+    color: white;
+  }
+
+  #nav_media_q {
+    background-color: #17a5bb !important;
+  }
+
+  #navbarNavDropdown{
+    background: white;
+  }
+} 
