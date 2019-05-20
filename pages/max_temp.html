@@ -6,7 +6,7 @@
     <title>Max Temperature</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
         <a class="navbar-brand font-weight-bold" href="../index.html" id="home_page_icon">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,27 +28,56 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button"
+                    <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="navbarNavDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
                         Plots</a>
                     <div class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="windiness.html">Windiness</a>
+                        <a class="dropdown-item" href="../pages/max_temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="../pages/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="../pages/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="../pages/windiness.html">Windiness</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Comparison</a>
+                    <a class="nav-link font-weight-bolder" href="pages/comparisons.html">Comparison</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
+                    <a class="nav-link font-weight-bolder" href="pages/data.html">Data</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <p>Max Temp baby</p>
+    <div class="container">
+        <div class="row">
+            <div id="viz_col" class="col-md-7 bg-white my-5">
+                <h2 class="font-weight-bold text-info">Max Temperature</h2>
+                <img class="img-fluid float_left" src="../images/Max_temp_vs_city_latitude.jpeg">
+                <p>As expected, the weather becomes significantly warmer as one approaches the equator.
+                    More interestingly, however, is the fact that hte southern hemisphere tends to be
+                    warmer this time of year than the northern hemisphere. This may be due to the tilt 
+                    of the earth at the time of the year this data was recorded.
+                </p>
+            </div>
+            <div id="main_viz" class="col-md-4 bg-white my-5">
+                <h3 class="font-weight-bold text-info" id="main_viz_h3">Visualizations</h3>
+                <div class="row">
 
+                    <img id="viz_highlighted" src="../images/Max_temp_vs_city_latitude.jpeg" width=50% height=50%>
+                    <img src="../images/Humidity_vs_city_latitude.jpeg" width=50% height=50%>
+
+                </div>
+                <div class="row">
+
+                    <img src="../images/Cloudiness_vs_city_latitude.jpeg" width=50% height="50%">
+                    <img src="../images/Wind_speed_vs_city_latitude.jpeg" width=50% height="50%">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;Copyright coding bootcamp 2019</p>
+    </footer>
 </body>
 
 </html>

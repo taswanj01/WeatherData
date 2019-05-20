@@ -22,7 +22,7 @@ body {
   background-color: rgb(233, 227, 227);
 }
 
-#main_col {
+#main_col, #viz_col {
    padding: 4vw;
    margin-top: 2vw;
    margin-bottom: 3vw;
@@ -77,7 +77,7 @@ h2 {
   border-bottom-color: rgb(235, 235, 235);
 }
 
-#main_lat img {
+#main_col img {
   float: left;
 }
 
@@ -101,4 +101,8 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 
+}
+
+#viz_highlighted {
+  border: 2px solid #17a5bb
 }
