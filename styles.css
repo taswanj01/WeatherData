@@ -104,6 +104,6 @@ p {
   }
 
   #navbarNavDropdown{
-    background: white;
+    background: white !important;
   }
 } 
